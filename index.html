@@ -6,97 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="keywords" content="CV, Davydenko, resume" />
     <meta name="description" content="It is future CV for programmer!" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="01_display.css" />
     <title>Davydenko CV</title>
   </head>
   <body>
-    <h1>Давиденко Владислав</h1>
-    <img src="/ava.jpg" alt="avatar" width="200px" />
+    <div class="container">
+      <div class="image">
+        <h1>Давиденко Владислав</h1>
+        <img src="/ava.jpg" alt="avatar" width="200px" />
+      </div>
 
-    <p>
-      Я з <b><em>України</em></b> і живу в маленькому селі під назвою Червона
-      Слобода
-    </p>
+      <div class="about-me">
+        <p>
+          Я з <b><em>України</em></b> і живу в маленькому селі під назвою
+          Червона Слобода
+        </p>
+        <p>
+          Мені буде 20 років і я навчаюсь в <b>КНУ ім. Тараса Шевченка</b> на
+          факульті Інформаційних технологій
+        </p>
+      </div>
 
-    <p>
-      Мені буде 20 років і я навчаюсь в <b>КНУ ім. Тараса Шевченка</b> на
-      факульті Інформаційних технологій
-    </p>
+      <div class="social-media">
+        <h3>Мої соціальні мережі:</h3>
+        <p>
+          <a href="https://www.instagram.com/vados_dav/" target="_blank">
+            Instagram
+          </a>
+          |
+          <a href="https://t.me/vados_dav" target="_blank"> Telegram </a>
+          |
+          <a href="https://twitter.com/vados_dav" target="_blank"> Twitter </a>
+        </p>
+      </div>
 
-    <h3>Мої соціальні мережі:</h3>
-    <p>
-      <a href="https://www.instagram.com/vados_dav/" target="_blank">
-        Instagram
-      </a>
-      |
-      <a href="https://t.me/vados_dav" target="_blank"> Telegram </a>
-      |
-      <a href="https://twitter.com/vados_dav" target="_blank"> Twitter </a>
-    </p>
-    <hr />
+      <div class="card bg-yellow">
+        <h3>Мої хобі:</h3>
+        <ul>
+          <li>Грать в футбол</li>
+          <li>Слухать музику</li>
+          <li>Тренуваться в спортзалі</li>
+        </ul>
+      </div>
 
-    <h3>Мої хобі:</h3>
-    <ul>
-      <li>Грать в футбол</li>
-      <li>Слухать музику</li>
-      <li>Тренуваться в спортзалі</li>
-    </ul>
-    <hr />
+      <div class="card bg-green">
+        <h3>Робота:</h3>
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Назва роботи</th>
+              <th>Посада</th>
+              <th>Коли начали</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>IT</td>
+              <td>Front`end</td>
+              <td>24.02.2022</td>
+            </tr>
+            <tr>
+              <td>IT</td>
+              <td>Back`end</td>
+              <td>21.02.2022</td>
+            </tr>
+            <tr>
+              <td>IT</td>
+              <td>Full stack</td>
+              <td>11.02.2022</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
 
-    <h3>Робота:</h3>
-    <table>
-      <thead>
-        <tr>
-          <th>Назва роботи</th>
-          <th>Посада</th>
-          <th>Коли начали</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>IT</td>
-          <td>Front`end</td>
-          <td>24.02.2022</td>
-        </tr>
-        <tr>
-          <td>IT</td>
-          <td>Back`end</td>
-          <td>21.02.2022</td>
-        </tr>
-        <tr>
-          <td>IT</td>
-          <td>Full stack</td>
-          <td>11.02.2022</td>
-        </tr>
-      </tbody>
-    </table>
-    <hr />
+      <div class="card inform-me">
+        <form>
+          <h3>Зв'язаться зі мною</h3>
+          <div class="form-row">
+            <div class="form-group">
+              <label for="name">Ім'я</label>
+              <input type="text" id="name" placeholder="Введіть ім'я" />
+            </div>
 
-    <h3>Зв'язаться зі мною</h3>
-    <form>
-      <div>
-        <label for="name">Ім'я</label>
-        <input type="text" id="name" placeholder="Введіть ім'я" />
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" placeholder="Введіть вашу почту" />
+            </div>
+          </div>
+        </form>
       </div>
 
       <div>
-        <label for="email">Email</label>
-        <input type="email" id="email" placeholder="Введіть вашу почту" />
+        <button type="submit" class="btn">Отправить</button>
       </div>
-
-      <div>
-        <label for="message">Повідомлення</label>
-        <br />
-        <textarea
-          id="message"
-          cols="25"
-          rows="5"
-          placeholder="Введіть повідомлення..."
-        ></textarea>
-      </div>
-
-      <div>
-        <button type="submit">Отправить</button>
-      </div>
-    </form>
+    </div>
   </body>
 </html>

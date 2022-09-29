@@ -12,6 +12,10 @@ body {
   margin-bottom: 25px;
 }
 
+.about-me {
+  text-align: center;
+}
+
 .card ul {
   margin: 0;
   padding: 5px 20px;
@@ -42,8 +46,12 @@ body {
   box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
 }
 
+.image {
+  text-align: center;
+}
+
 .container {
-  margin: 15px;
+  margin: 0px 600px;
   max-width: 850px;
 }
 
@@ -55,6 +63,7 @@ body {
   border-radius: 25px;
   font-family: inherit;
   margin-top: 25px;
+  margin-left: 43%;
 }
 
 .btn:hover {
@@ -67,6 +76,7 @@ body {
   padding: 5px 5px;
   background-color: blanchedalmond;
   margin-bottom: 25px;
+  text-align: center;
 }
 
 .social-media a {
@@ -110,7 +120,7 @@ a:active {
 }
 
 @media (max-width: 650px) {
-  .container {
+  .body {
     text-align: center;
   }
 }
